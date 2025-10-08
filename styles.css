@@ -135,6 +135,10 @@ footer a {
     color: orangered;
     border-color: orangered;
 }
+.button2:active {
+    color: white;
+    border-color: white;
+}
 /*MEDIA QUERIES*/
 
 @media(max-width: 960px) {
