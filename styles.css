@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*General styles*/
+body {
+    font-family: "noto sans", sans-serif;
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+label {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+
+/*Seperating the two sides*/
+.container{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+}
+
+/*Left side*/
+.leftside {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.leftside img {
+    width: 40px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+form {
+    width: 300px;
+    font-size: 11px;
+}
+form input {
+    width: 100%;
+    background: none;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 2px;
+    height: 21px;
+}
+.info {
+    position: relative;
+}
+.info div {
+    position: absolute;
+    top: -6px;
+    background: black;
+    left: 15px;
+    padding: 0 5px;
+}
+.margin {
+    margin-top: 20px;
+}
+.button1 {
+    margin-top: 10px;
+    width: 100%;
+    height: 27px;
+    background: orangered;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+.links{
+    display: grid;
+    text-align: center;
+    grid-gap: 10px;
+    margin-top: 30px;
+}
+.links a {
+    color: white;
+    font-size: 12px;
+}
+.or {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    font-size: 14px;
+}
+hr {
+    width: 100%;
+    margin: 0 8px;
+}
+.button2 {
+    background: none;
+    color: white;
+    font-size: 12px;
+    border: 1px solid white;
+    padding: 7px 75px;
+    cursor: pointer;    
+}
+footer {
+    margin-top: 40px;
+    font-size: 11px;
+    text-align: center;
+}
+footer a {
+    color: orangered;
+    text-decoration: underline;
+}
+
+/*RIGHT SIDE*/
+
+.rightside {
+    background: url(FB_IMG_17597855295811987.jpg) center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rightside h1 {
+    font-weight: 300;
+    text-align: center;
+}
+/*MEDIA QUERIES*/
+
+@media(max-width: 960px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .rightside {
+       padding: 0 10px;
+    }
+}
+    
