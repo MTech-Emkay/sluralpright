@@ -103,7 +103,8 @@ hr {
     font-size: 12px;
     border: 1px solid white;
     padding: 7px 75px;
-    cursor: pointer;    
+    cursor: pointer;  
+    transition: 0.2s;  
 }
 footer {
     margin-top: 40px;
