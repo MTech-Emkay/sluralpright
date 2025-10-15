@@ -119,8 +119,8 @@ footer a {
 /*RIGHT SIDE*/
 
 .rightside {
-    background: url(FB_IMG_17597855295811987.jpg) center;
-    color: white;
+    background: url(acme-background.jpg) right;
+    color: orangered;
     height: 100vh;
     display: flex;
     flex-direction: column;
